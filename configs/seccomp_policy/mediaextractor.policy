@@ -1,0 +1,5 @@
+connect: 1
+fcntl: 1
+sendto: 1
+socket: 1
+writev: 1

@@ -235,6 +235,10 @@ PRODUCT_COPY_FILES += \
     $(foreach service, $(wildcard $(LOCAL_PATH)/configs/init/hw/*), \
     $(service):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/init/hw/, $(notdir $(service))) )
 
+# Seccomp policy
+PRODUCT_COPY_FILES += $(foreach seccomp_policy, $(wildcard $(LOCAL_PATH)/configs/seccomp_policy/*), \
+    $(seccomp_policy):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/, $(notdir $(seccomp_policy))) )
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8952
