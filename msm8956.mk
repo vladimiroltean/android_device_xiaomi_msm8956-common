@@ -259,3 +259,5 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# HIDL
+$(call inherit-product, $(LOCAL_PATH)/vintf/hidl.mk)
