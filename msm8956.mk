@@ -241,10 +241,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += $(foreach seccomp_policy, $(wildcard $(LOCAL_PATH)/configs/seccomp_policy/*), \
     $(seccomp_policy):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/, $(notdir $(seccomp_policy))) )
 
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.msm8952
-
 # Wi-Fi and WCNSS configuration files
 PRODUCT_COPY_FILES += $(foreach wifi_config, $(wildcard $(LOCAL_PATH)/configs/wifi/*), \
     $(wifi_config):$(addprefix $(TARGET_COPY_OUT_SYSTEM)/etc/wifi/, $(notdir $(wifi_config))) ) \
