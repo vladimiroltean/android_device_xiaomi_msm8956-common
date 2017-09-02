@@ -262,3 +262,5 @@ PRODUCT_PACKAGES += \
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/vintf/hidl.mk)
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE   := $(LOCAL_PATH)/vintf/compatibility_matrix.xml
+
