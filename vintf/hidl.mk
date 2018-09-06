@@ -15,6 +15,10 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     android.hardware.camera.provider@2.4-impl \
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service \
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
