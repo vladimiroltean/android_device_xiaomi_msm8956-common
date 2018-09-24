@@ -21,3 +21,9 @@ mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
+
+[vendor/etc/init/hw/init.qcom.bt.sh]
+mode:  0755
+user:  AID_BLUETOOTH
+group: AID_BLUETOOTH
+caps:  0
