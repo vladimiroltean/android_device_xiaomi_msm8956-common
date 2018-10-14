@@ -222,17 +222,17 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libxml2
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.sh \
-    init.qcom.bt.sh
+# Ex-ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
+    $(LOCAL_PATH)/configs/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
 
-PRODUCT_PACKAGES += \
-    init.qcom.rc \
-    init.qcom.power.rc \
-    init.qcom.usb.rc \
-    ueventd.qcom.rc
+# Vendor-provided service definitions (executed by init scripts)
+PRODUCT_COPY_FILES += \
+    $(foreach service, $(wildcard $(LOCAL_PATH)/configs/init/*.rc), \
+    $(service):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/init/, $(notdir $(service))) ) \
+    $(foreach service, $(wildcard $(LOCAL_PATH)/configs/init/hw/*), \
+    $(service):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/init/hw/, $(notdir $(service))) )
 
 # Sensors
 PRODUCT_PACKAGES += \

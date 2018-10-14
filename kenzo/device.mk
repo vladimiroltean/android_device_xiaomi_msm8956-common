@@ -41,9 +41,9 @@ PRODUCT_PACKAGES += \
     libshims_camera \
     libshims_ims
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.target.rc
+# Device-specific init script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init/hw/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
