@@ -46,7 +46,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
-BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 ramoops_memreserve=4M
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 ramoops.mem_address=0xf0000000 ramoops.mem_size=0x400000 ramoops.ecc=1 ramoops.console_size=0x300000
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
