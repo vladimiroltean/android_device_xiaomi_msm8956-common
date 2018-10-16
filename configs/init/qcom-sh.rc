@@ -1,0 +1,6 @@
+# vim: set ft=sh:
+
+service qcom-sh /system/bin/sh /vendor/etc/init/hw/init.qcom.sh
+    class late_start
+    user root
+    oneshot

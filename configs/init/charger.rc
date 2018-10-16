@@ -1,0 +1,6 @@
+# vim: set ft=sh:
+
+service charger /charger
+    class charger
+    group system graphics
+    seclabel u:r:charger:s0

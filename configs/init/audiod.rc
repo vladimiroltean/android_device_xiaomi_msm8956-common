@@ -1,0 +1,6 @@
+# vim: set ft=sh:
+
+service audiod /system/bin/audiod
+   class late_start
+   user system
+   group system

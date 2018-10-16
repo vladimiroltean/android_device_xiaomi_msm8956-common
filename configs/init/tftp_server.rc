@@ -1,0 +1,6 @@
+# vim: set ft=sh:
+
+service tftp_server /system/bin/tftp_server
+    class main
+    user root
+    writepid /dev/cpuset/system-background/tasks

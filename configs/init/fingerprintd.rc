@@ -1,0 +1,8 @@
+# vim: set ft=sh:
+
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    user system
+    group drmrpc input system
+    socket fpce stream 0660 system system
+    writepid /dev/cpuset/system-background/tasks

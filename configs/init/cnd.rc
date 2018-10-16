@@ -1,0 +1,6 @@
+# vim: set ft=sh:
+
+service cnd /system/bin/cnd
+    class main
+    socket cnd stream 660 root inet
+    writepid /dev/cpuset/system-background/tasks
