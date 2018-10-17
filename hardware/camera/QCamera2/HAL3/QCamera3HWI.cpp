@@ -3358,7 +3358,7 @@ int QCamera3HardwareInterface::flushPerf()
     }
 
     if (mPendingBuffersMap.num_buffers == 0) {
-        CDBG("%s: No pending buffers in the HAL, return flush");
+        CDBG("%s: No pending buffers in the HAL, return flush", __func__);
         mFlushPerf = false;
         pthread_mutex_unlock(&mMutex);
         return rc;
