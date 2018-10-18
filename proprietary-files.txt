@@ -1,9 +1,11 @@
-# ADSP
-bin/adsprpcd
-vendor/lib64/libadsprpc.so
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
+# ADSP - from samsung c9ltezc
+vendor/bin/adsprpcd|7ceb4f275de3816b2a86b889c8902cd7f4e83aa3
+vendor/lib64/libadsp_default_listener.so|d13ec3501f029660c213208999c13315767b0ec4
+vendor/lib64/libadsprpc.so|ef09248c0a16ed1fc738127d4de0392c01fea58e
+vendor/lib/libadsp_default_listener.so|ae178877cef5f10c9b755bad836d004a75aaa582
+vendor/lib/libadsprpc.so|a461493b33424ff92b2cee4669c704ca0d21eb54
+vendor/lib/libfastcvadsp_stub.so|766fd7774813b51e82e753b487bb6f1230c10826
+vendor/lib/libfastcvopt.so|746f669d5cab15f719546a5650ad2af803a35a7b
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -21,32 +23,47 @@ vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 lib/libDiracAPI_SHARED.so
 lib/soundfx/libdirac.so
 vendor/etc/diracmobile.config
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbmapper.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libhwdaphal.so
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbmapper.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
 vendor/lib/libhwdaphal.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
+vendor/lib64/libhwdaphal.so
+
+# Audio libraries - from samsung c9ltezc
+vendor/lib64/libacdb-fts.so|075b98023649eb090b21e68a03860d534bd833c5
+vendor/lib64/libacdbloader.so|0f80dba7986f9c9be5ea8fbfe5ddef9b633fb0c0
+vendor/lib64/libacdbmapper.so|2e7ec095d0125cb17ac74eac584468fca496b811
+vendor/lib64/libacdbrtac.so|33c8e946b8443ba5a550e8088e8846bb1a02dbdf
+vendor/lib64/libadiertac.so|f357e4679f9977acfefeebba1bd7d5e6211b4b3c
+vendor/lib64/libaudcal.so|a3c2fffb9bc2a8090add2fc95497fc9cb91a1415
+vendor/lib64/libaudioalsa.so|a5b8461daa1eab6b8bcc51a9b30696ffab6116f6
+vendor/lib/libacdb-fts.so|e263d39bf10bd89a6e7e27370a98177b2cfe926b
+vendor/lib/libacdbloader.so|01e3e05b8850c0290a48d1b2938adab5f0c9dfc8
+vendor/lib/libacdbmapper.so|005eba51991267c31d6d7534ac6062b22701a4d6
+vendor/lib/libacdbrtac.so|7a727c1d550dbba85c63e6357700b29537127c5d
+vendor/lib/libadiertac.so|386afa12e79c691958909ecd344631b4485c55ec
+vendor/lib/libadm.so|211f423e9aeb57dc8e15d056741a8e0a762cabbc
+vendor/lib/libaudcal.so|4743b380879101e0e959bbc22c73ae03a2c24537
+vendor/lib/libaudioalsa.so|ed50aa37cbbcf2e4e526a717635a7c9b49415e87
+vendor/lib/soundfx/libqcbassboost.so|ea9d1259b8f3e04307160d0304a99417b3da7d06
+vendor/lib/soundfx/libqcreverb.so|f260dc813eb373d229ee85526549ec0e3c9a18ce
+vendor/lib/soundfx/libqcvirt.so|63bccd6a22e7b22dd715a005999f0c8268fc442d
 
 # Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
+vendor/bin/btnvtool
+vendor/bin/hci_qcomm_init
+vendor/bin/wcnss_filter
 vendor/lib64/libbtnv.so
 vendor/lib/libbtnv.so
+
+# Bluetooth firmware - from samsung c9ltezc
+etc/firmware/nvm_tlv.bin|78d937d7939300be7a23d9281cf082827697d4c2
+etc/firmware/nvm_tlv_1.3.bin|a5856eaf0ef9537772f1f07a287d4bc666483728
+etc/firmware/nvm_tlv_2.1.bin|c4dddea2ae08f625feb0fc5c75137dec0a58e46d
+etc/firmware/nvm_tlv_3.0.bin|d527cfa764514c60588753c3f637a266d96a4f8c
+etc/firmware/nvm_tlv_3.2.bin|fb0c1c079d019957fe4ac07f52cd8e5e9c02b030
+etc/firmware/rampatch_tlv.img|0503c6452f9eb843c751d107feed370de8a75f71
+etc/firmware/rampatch_tlv_1.3.tlv|1da2a06f5dc5d8d2489c35a695a6c3db6575110b
+etc/firmware/rampatch_tlv_2.1.tlv|3f7e5271b40e581af603bb1093ccb2b058c83e82
+etc/firmware/rampatch_tlv_3.0.tlv|5f8120ea99ec8462f5ee21a29e0b290a031524c0
+etc/firmware/rampatch_tlv_3.2.tlv|1c934123b0571803cb3404a0d884fdf97241d0cb
 
 # Charger
 bin/hvdcp_opti
@@ -101,8 +118,8 @@ vendor/lib/libdpmtcm.so
 etc/firmware/DE.o.msm8952
 etc/firmware/DE.o.msm8976
 
-# Gatekeeper
-vendor/lib64/hw/gatekeeper.msm8952.so
+# Gatekeeper - from samsung c9ltezc
+vendor/lib64/hw/gatekeeper.msm8952.so|d6ec95511d4025835534286a813dd98b47488986
 
 # GPS
 bin/garden_app
@@ -138,53 +155,57 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 
 # Graphics
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30-a5xx.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libmm-disp-apis.so
-vendor/lib64/libmm-qdcm.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/libscale.so
-vendor/lib64/libsd_sdk_display.so
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a5xx.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libmmQSM.so
-vendor/lib/libOpenCL.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libsd_sdk_display.so
-vendor/lib/libscale.so
+vendor/lib/libmmQSM.so # linked by libmmipstreamsourcehttp.so
+
+# Graphics - from samsung c9ltezc
+vendor/lib64/egl/eglSubDriverAndroid.so|2125a4d98b104f89af6c44ec9bedecc8bdddb502
+vendor/lib64/egl/libEGL_adreno.so|04daba69de9bcdd1207d1e2502899ec17d3f2901
+vendor/lib64/egl/libGLESv1_CM_adreno.so|b0b5a3d55d354ccdd22e285c6a1e4d0384e38967
+vendor/lib64/egl/libGLESv2_adreno.so|34edc6bbe8c81da7d2d5ec57d213f9dabcbea004
+vendor/lib64/egl/libq3dtools_adreno.so|5e7d358ad581b366b496ae8a0c7fa91e4914e8dc
+vendor/lib64/egl/libq3dtools_esx.so|ff6cbbf3b2dfcd47ac0f923b098e3ad71c0981fe
+vendor/lib64/egl/libQTapGLES.so|1c3dc1ad2d25192010f12b80e57c2a53c561b598
+vendor/lib64/hw/vulkan.msm8952.so|ec99d44a2f3eec7b1b00ecc3ba8a228354b892af
+vendor/lib64/libadreno_utils.so|e1b29b02c1411b2b52f5674e66ccd3856dd33c0e
+vendor/lib64/libbccQTI.so|b1895a127ec14a61eafb9b8c5d7c883541f43cab
+vendor/lib64/libC2D2.so|1b461850b08357b32bf8ce789427f9f592a06105
+vendor/lib64/libc2d30-a5xx.so|f690a681d82490120b5225c2f6e4043cb89a9d9d
+vendor/lib64/libc2d30_bltlib.so|46cfddcfc2461960e9813481ed7aa2514b2a66f5
+vendor/lib64/libCB.so|2c97900750ca936611ac22244db9a326286bddf8
+vendor/lib64/libgsl.so|5072d87111ded2afe7837fcb2a3045ca4d4b5e60
+vendor/lib64/libllvm-glnext.so|14e8fa59150f8ebe0c69bd1934ab6f1136f27d69
+vendor/lib64/libllvm-qcom.so|836960b0ccf50e84af966a18c58ec8b4614d1fec
+vendor/lib64/libllvm-qgl.so|37b68725bfd8c35ae19718aa67bea2d120c732d9
+vendor/lib64/libOpenCL.so|70c61fcfe15450f35bf0f44060291fd9d35343d3
+vendor/lib64/librs_adreno.so|445f317c7bc18873452f3deca05a7c982ad582b3
+vendor/lib64/librs_adreno_sha1.so|b2e01e3445d820259e2e8a4563ac53851d59e93e
+vendor/lib64/libRSDriver_adreno.so|9020a63e75182deab35fdb14ad6a7b9339512470
+vendor/lib64/libscale.so|1191588a22e91cea6eb3ee023c70cb3844767a6a
+vendor/lib64/libsd_sdk_display.so|3d5cfc865b22a0d591614f6e79afd79991b1b3ad
+vendor/lib/egl/eglSubDriverAndroid.so|7ebcccbadde865ec130378c5c0f866049d420c3a
+vendor/lib/egl/libEGL_adreno.so|f274e2e26b1d5b524783d0934909f077fff76212
+vendor/lib/egl/libGLESv1_CM_adreno.so|e4127763c4fd16db09f79ec56ae9f6b55229645a
+vendor/lib/egl/libGLESv2_adreno.so|6abc18ddf4fcde623816010d796dcab99f9f7a91
+vendor/lib/egl/libq3dtools_adreno.so|ecf18ca7d54fc998c58f16aa1d3c9ab0fd77f20c
+vendor/lib/egl/libq3dtools_esx.so|a1631532c9a5bdcad34afc37d52f4a12574ccf6b
+vendor/lib/egl/libQTapGLES.so|91095005e7caebf2887bfad69fc62d93ca5d23fc
+vendor/lib/hw/vulkan.msm8952.so|a0bc80df0e3463cab50ad50cc5042b5395b95a3b
+vendor/lib/libadreno_utils.so|285dfe3d9045365ea5e16e8eea0d4d0a0e4c61f8
+vendor/lib/libbccQTI.so|786c5e68c2ca9be1823c999c368bff5ad5b981be
+vendor/lib/libC2D2.so|9c8906bb05b889892d7e006cf469ee6a5a42ed06
+vendor/lib/libc2d30-a5xx.so|fe5ec37fc7dd4ba04b0c9bd78ebbf47039f28e97
+vendor/lib/libc2d30_bltlib.so|d02c7c9ca319bb04daea138bba6536eba3389cb9
+vendor/lib/libCB.so|6056c16d595b8d93ac0fcff2679788644811a381
+vendor/lib/libgsl.so|41e3edc679eb64a7604e148f63f2bd1c7b01a0c2
+vendor/lib/libllvm-glnext.so|feb2eb2df8c6b009dd990585373f0c428b9d2124
+vendor/lib/libllvm-qcom.so|4d78e8b53fa2538735886aedd95e660a5c665727
+vendor/lib/libllvm-qgl.so|bf769b728625747b53a6ac788f284f88f46a97dc
+vendor/lib/libOpenCL.so|3344467262fce187244a96397d448bb29559f920
+vendor/lib/librs_adreno.so|0f31d0de23bba7f6882742dd27198e8d161f60af
+vendor/lib/librs_adreno_sha1.so|05cbbdfc444d08ea5ea3600d8a886b6a0e1a98cb
+vendor/lib/libRSDriver_adreno.so|d6270b7e5115510b6cc4201e5bd543498603daee
+vendor/lib/libsd_sdk_display.so|dc4e7574e5196ded3a5d71a8a34f05107b862a20
+vendor/lib/libscale.so|3801dc31441b7e031439246733194c47b7321a5e
 
 # Graphics firmware
 etc/firmware/a530_pfp.fw
@@ -196,9 +217,10 @@ bin/ipacm-diag
 # Keystore
 vendor/lib64/hw/keystore.msm8952.so
 
-# Listen
-vendor/lib/hw/sound_trigger.primary.msm8952.so
-vendor/lib/libsmwrapper.so
+# Listen - from samsung c9ltezc
+vendor/lib/hw/sound_trigger.primary.msm8952.so|9e93a1ab410239abe56c0f2c6d5f2c806004b282
+vendor/lib/libadpcmdec.so|48c425e9e7bfdfb0665530d5b7e5011ac63aa2e2
+vendor/lib/libsmwrapper.so|0ac9e3e0dffae1c33fb4bb9144eb5c3c79efe344
 
 # Media
 lib64/libOmxVpp.so
@@ -277,6 +299,7 @@ framework/com.qti.snapdragon.sdk.display.jar
 vendor/bin/mm-pp-daemon
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libmm-als.so
+vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libmm-dspp-utils.so
 vendor/lib64/libmm-qdcm-diag.so
 vendor/lib64/libmm-qdcm.so
