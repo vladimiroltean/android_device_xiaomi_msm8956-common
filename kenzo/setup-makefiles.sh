@@ -16,13 +16,15 @@
 # limitations under the License.
 #
 
-set -e
+set -e -u -o pipefail
 
 # Required!
-export DEVICE=kenzo
-export DEVICE_COMMON=msm8956-common
-export VENDOR=xiaomi
-
+export VENDOR="xiaomi"
+export DEVICE="kenzo"
+export DEVICE_COMMON="msm8956-common"
 export DEVICE_BRINGUP_YEAR=2016
 
-./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
+MY_DIR=$(dirname $(readlink -f "${BASH_SOURCE[0]}"))
+
+${MY_DIR}/../setup-makefiles.sh $@
+

@@ -19,17 +19,15 @@
 set -e
 
 # Load extract_utils and do some sanity checks
-MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+MY_DIR=$(dirname $(readlink -f "${BASH_SOURCE[0]}"))
+LINEAGE_ROOT=$(readlink -f "${MY_DIR}/../../..")
 
-LINEAGE_ROOT="$MY_DIR"/../../..
-
-HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
-    exit 1
+HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+if [ ! -f "${HELPER}" ]; then
+	echo "Unable to find helper script at $HELPER"
+	exit 1
 fi
-. "$HELPER"
+. "${HELPER}"
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
