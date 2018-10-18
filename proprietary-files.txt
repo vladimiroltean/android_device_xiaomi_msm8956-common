@@ -94,25 +94,20 @@ vendor/lib/libwms.so
 vendor/lib/libwqe.so
 vendor/lib/libxml.so
 
-# DPM
-bin/dpmd
-etc/dpm/dpm.conf
-etc/dpm/nsrm/NsrmConfiguration.xml
-etc/permissions/com.qti.dpmframework.xml
-etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
-vendor/lib64/libdpmctmgr.so
-vendor/lib64/libdpmfdmgr.so
-vendor/lib64/libdpmframework.so
-vendor/lib64/libdpmnsrm.so
-vendor/lib64/libdpmtcm.so
-vendor/lib/libdpmctmgr.so
-vendor/lib/libdpmfdmgr.so
-vendor/lib/libdpmframework.so
-vendor/lib/libdpmnsrm.so
-vendor/lib/libdpmtcm.so
+# DPM - from lenovo YTX703L
+bin/dpmd:vendor/bin/dpmd|6dfe2ec78d184e2032713d0baee4e37d7ae12222
+framework/dpmapi.jar:vendor/framework/dpmapi.jar|0015235ff71d52d1b340b10ce4fa737fa26975ef
+framework/tcmclient.jar:vendor/framework/tcmclient.jar|e7149c664f4b1841139ab816c0d4e0942df0583c
+vendor/lib64/libdpmctmgr.so|4ca92fc510792faed1b52768650fb1ca0949c4f9
+vendor/lib64/libdpmfdmgr.so|8bfa23a26953c1d76e0012e3de23434ede8a2bf7
+vendor/lib64/libdpmframework.so|3d9fede359476e3c2dd59cbf2475a2860c01f4f8
+vendor/lib64/libdpmnsrm.so|530eea62b5630d2f1c5537211dfeeff696433852
+vendor/lib64/libdpmtcm.so|4c663047e70b947bd3ddf1c3309b7335f2224bbd
+vendor/lib/libdpmctmgr.so|ecaaf13a988fa5be510d62eb02fd2f7a955ad47f
+vendor/lib/libdpmfdmgr.so|b6e2d70c26818752a7ee25b5d59586ce7c38d8f0
+vendor/lib/libdpmframework.so|45e032e1bbfdefac56c2af990750084f91f02397
+vendor/lib/libdpmnsrm.so|25a72e71ed7f721ccf5a2b8946003d4dd62c696b
+vendor/lib/libdpmtcm.so|1eac96753942d2acd938019982f13c73de088313
 
 # Firmwares
 etc/firmware/DE.o.msm8952
