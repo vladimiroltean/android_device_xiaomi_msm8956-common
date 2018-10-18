@@ -116,38 +116,49 @@ etc/firmware/DE.o.msm8976
 # Gatekeeper - from samsung c9ltezc
 vendor/lib64/hw/gatekeeper.msm8952.so|d6ec95511d4025835534286a813dd98b47488986
 
-# GPS
-bin/garden_app
-bin/loc_launcher
-bin/xtwifi-client
-bin/xtwifi-inet-agent
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.xml
-framework/com.qti.location.sdk.jar
--lib64/libloc_api_v02.so
-lib64/libloc_ds_api.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
-vendor/bin/slim_daemon
-vendor/lib64/hw/flp.default.so
-vendor/lib64/libalarmservice_jni.so
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libflp.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libgeofence.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_ext.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/libquipc_os_api.so
-vendor/lib64/libulp2.so
-vendor/lib64/libxt_native.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_ulp_adaptor.so
+# GPS - from bq bardock
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk:vendor/priv-app/com.qualcomm.location/com.qualcomm.location.apk|c047b73a70090e49beb8378a2d1cb80a39eba5df
+-vendor/lib64/libloc_api_v02.so|47a51133069a4c187ca9a0a678f3b51d5eca5761
+-vendor/lib/libloc_api_v02.so|dd6b25583c4d8c21a8805f129d517e16148c8119
+framework/com.qti.location.sdk.jar:vendor/framework/com.qti.location.sdk.jar|f2e9f1d49201e1bad83008445fdafe9541e9b2bd
+framework/izat.xt.srv.jar:vendor/framework/izat.xt.srv.jar|e10f1baf6ae0f70c4a529e5711559cebbc3644c9
+lib64/liblocationservice_jni.so:vendor/lib64/liblocationservice_jni.so|5a8d59701a0babefe807205b8901829ae9fb5e45
+lib64/libxt_native.so:vendor/lib64/libxt_native.so|e4f2c1813d08ff7452dcba59fa1e23deea2494e4
+lib64/vendor.qti.gnss@1.0.so:vendor/lib64/vendor.qti.gnss@1.0.so|716a812a9f4cdb45c57eb0a6fabb17624a91d553
+vendor/bin/garden_app|378d491bab7aa2c9fa5ec3cec6960103858c9dff
+vendor/bin/xtwifi-client|2ed47cf59b6cb49a08f1c4a48bdd92d4d89e9f30
+vendor/bin/xtwifi-inet-agent|d4391030c2ba255e8c44058889c3dbcaf70df6d2
+vendor/bin/hw/vendor.qti.gnss@1.0-service|bdf23fe2af07c2afb74721023431446104fd828d
+vendor/bin/loc_launcher|133d41049a88784e7fe14b8c93a284b09054b2de
+vendor/bin/lowi-server|1734353992c7caf1dfb87671b4480335d7a33dce
+vendor/bin/xtra-daemon|4cd488727311c338cf7e6b33d74dfc0ac8e43b9b
+vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
+vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
+vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so|c355e3c14bd769e42edfdec008bae163d9cf1427
+vendor/lib64/libDRPlugin.so|d4f1127ed8f98011fe9687d40e8942e5738f4273
+vendor/lib64/lib_drplugin_server.so|73b0e227e74f9020f2616e4a4dc0ec1f27d49638
+vendor/lib64/libalarmservice_jni.so|cf455802dcabf759bc6ac43767d7f227df8e3517
+vendor/lib64/libdataitems.so|1ffcb1a655738301fda0f2ae5bd458f4901475f0
+vendor/lib64/libdrplugin_client.so|312ef07b275bdbfb923cca18e961edf146736616
+vendor/lib64/libevent_observer.so|c163884372303f68e1fc073cf42d30959ef771c6
+vendor/lib64/libflp.so|3ccecdd103f0ff8689e22b6f0105ba1b6a1c2b27
+vendor/lib64/libgdtap.so|899a336541f8603f4db4dbab83b840d3bc226cc0
+vendor/lib64/libgeofence.so|b666ad9429e910f3644e73066a2fd2fd5bc7df1e
+vendor/lib64/libizat_client_api.so|896931c51c7fa8a9f626c971361679823e635d77
+vendor/lib64/libizat_core.so|49a29753966951814cb94b5ca0b899a3bfb74297
+vendor/lib64/liblbs_core.so|0b82101df79d0694dbd77fce64a067aa34633e60
+vendor/lib64/libloc_ds_api.so|88c08388cc003670f46d4f0b2fe44bfdf47cfa2d
+vendor/lib64/libloc_externalDr.so|0b1ddef9675097306ea03c79069f8df054c2cd06
+vendor/lib64/liblocationservice.so|6db1ec078cc6a15e49b7cdb680a1014d0daa2637
+vendor/lib64/liblocationservice_glue.so|2e4afd2d3934710db2fdde7e113b6ee78893ea21
+vendor/lib64/liblowi_client.so|89305e655cbdbe53dde3afc804b5dddb5fa9ce6e
+vendor/lib64/liblowi_wifihal.so|a72819c88a88c26784281287a6f7c37435632fcf
+vendor/lib64/libquipc_os_api.so|91747d4df79ae73cd52f5d499c87c3552be9a673
+vendor/lib64/libslimclient.so|31c7b119598147ff6b97b86a3fb5ed93939e398b
+vendor/lib64/libulp2.so|a7325ec5cfdd54a44dca7465f51c531bfcd62062
+vendor/lib64/libxtadapter.so|9a8fbd106994aaaf380be883fa2ef37d04e20401
+vendor/lib64/libxtwifi_ulp_adaptor.so|078124cc018badf89c1f5588e9102e9f7c034da2
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so|249c76153f8de014bf2dd2ab623ee3d87741fbc8
 
 # Graphics
 vendor/lib/libmmQSM.so # linked by libmmipstreamsourcehttp.so
