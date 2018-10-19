@@ -243,7 +243,7 @@ PRODUCT_COPY_FILES += $(foreach seccomp_policy, $(wildcard $(LOCAL_PATH)/configs
 
 # Wi-Fi and WCNSS configuration files
 PRODUCT_COPY_FILES += $(foreach wifi_config, $(wildcard $(LOCAL_PATH)/configs/wifi/*), \
-    $(wifi_config):$(addprefix $(TARGET_COPY_OUT_SYSTEM)/etc/wifi/, $(notdir $(wifi_config))) ) \
+    $(wifi_config):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/wifi/, $(notdir $(wifi_config))) ) \
     $(LOCAL_PATH)/configs/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
 
 BOARD_VENDOR_EXTRA_SYMLINKS += \
