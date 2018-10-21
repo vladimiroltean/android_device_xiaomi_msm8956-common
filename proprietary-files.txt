@@ -116,7 +116,7 @@ etc/firmware/DE.o.msm8976
 vendor/lib64/hw/gatekeeper.msm8952.so|d6ec95511d4025835534286a813dd98b47488986
 
 # GPS - from bq bardock
--priv-app/com.qualcomm.location/com.qualcomm.location.apk:vendor/priv-app/com.qualcomm.location/com.qualcomm.location.apk|c047b73a70090e49beb8378a2d1cb80a39eba5df
+#-priv-app/com.qualcomm.location/com.qualcomm.location.apk:vendor/priv-app/com.qualcomm.location/com.qualcomm.location.apk|c047b73a70090e49beb8378a2d1cb80a39eba5df
 -vendor/lib64/libloc_api_v02.so|47a51133069a4c187ca9a0a678f3b51d5eca5761
 -vendor/lib/libloc_api_v02.so|dd6b25583c4d8c21a8805f129d517e16148c8119
 framework/com.qti.location.sdk.jar:vendor/framework/com.qti.location.sdk.jar|f2e9f1d49201e1bad83008445fdafe9541e9b2bd
