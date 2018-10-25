@@ -45,17 +45,17 @@ write_makefiles "$MY_DIR"/proprietary-files.txt
 # We are done!
 write_footers
 
-if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
-    # Reinitialize the helper for device
-    INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false
+if [ -s "${MY_DIR}/${DEVICE}/proprietary-files.txt" ]; then
+	# Reinitialize the helper for device
+	INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
+	setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false
 
-    # Copyright headers and guards
-    write_headers
+	# Copyright headers and guards
+	write_headers
 
-    # The standard device blobs
-    write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt
+	# The standard device blobs
+	write_makefiles "${MY_DIR}/${DEVICE}/proprietary-files.txt"
 
-    # We are done!
-    write_footers
+	# We are done!
+	write_footers
 fi
